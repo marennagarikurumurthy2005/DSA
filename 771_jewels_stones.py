@@ -26,12 +26,13 @@ def func(jewels,stones):
     #         count+=1
     #     else:
     #         pass
-    for i in jewels:
-        for j in stones:
+    for i in stones:
+        for j in jewels:
             if i==j:
                 count+=1
+                break
             else:
                 pass
     return count 
-result=func("aAbB","AabbCCC")
+result=func("aAbaBa","AabbCCC")
 print(result)
