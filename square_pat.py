@@ -60,56 +60,89 @@
 #     print()
 
 
-r=10
-c=9
+# r=10
+# c=9
+# for i in range(r):
+#     for j in range(c-i):
+#         print(' ',end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         if i==0 or i==r-1 or k==0 or k==temp-1:
+#             print("*",end='')
+#         else:
+#             print(" ",end='')
+#     print()
+
+
+# for i in range(r-1,-1,-1):
+#     for j in range(c-i):
+#         print(' ',end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         if i==0 or i==r-1 or k==0 or k==temp-1:
+#             print("*",end='')
+#         else:
+#             print(" ",end='')
+#     print()
+
+
+
+# print()
+# print()
+# r=10
+# c=9
+# for i in range(r-2):
+#     for j in range(c-i):
+#         print(' ',end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         if i==0 or i==r-1 or k==0 or k==temp-1:
+#             print("*",end='')
+#         else:
+#             print(" ",end='')
+#     print()
+
+
+# for i in range(r-2,-1,-1):
+#     for j in range(c-i):
+#         print(' ',end="")
+#     temp=i*2+1
+#     for k in range(temp):
+#         if i==0 or i==r-1 or k==0 or k==temp-1:
+#             print("*",end='')
+#         else:
+#             print(" ",end='')
+#     print()
+
+
+# r=15
+
+# for i in range(1,r+1):
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     print()
+
+
+r=5
+c=4
 for i in range(r):
     for j in range(c-i):
-        print(' ',end="")
-    temp=i*2+1
-    for k in range(temp):
-        if i==0 or i==r-1 or k==0 or k==temp-1:
-            print("*",end='')
-        else:
-            print(" ",end='')
-    print()
-
-
-for i in range(r-1,-1,-1):
-    for j in range(c-i):
-        print(' ',end="")
-    temp=i*2+1
-    for k in range(temp):
-        if i==0 or i==r-1 or k==0 or k==temp-1:
-            print("*",end='')
-        else:
-            print(" ",end='')
+        print(" ",end="")
+    for k in range(i+1,0,-1):
+        print(k,end='')
+        
     print()
 
 
 
-print()
-print()
-r=10
-c=9
-for i in range(r-2):
+r=5
+c=4
+for i in range(r):
     for j in range(c-i):
-        print(' ',end="")
-    temp=i*2+1
-    for k in range(temp):
-        if i==0 or i==r-1 or k==0 or k==temp-1:
-            print("*",end='')
-        else:
-            print(" ",end='')
-    print()
+        print(" ",end="")
+    for k in range(i+1,0,-1):
+        print(k,end='')
 
-
-for i in range(r-2,-1,-1):
-    for j in range(c-i):
-        print(' ',end="")
-    temp=i*2+1
-    for k in range(temp):
-        if i==0 or i==r-1 or k==0 or k==temp-1:
-            print("*",end='')
-        else:
-            print(" ",end='')
+    for k in range(2,i+2):
+        print(k,end='')
     print()
