@@ -42,20 +42,40 @@ def func(nums):
             
     return count
 
-nums =[1,2,3,1,1,3]
+
+
+nums =[1,1,1,1]
 result=func(nums)
 print(result)
 
 
-# dict={}
-minval=nums[0]
+#  optimal solution
+
+dict={}
 for i in nums:
     
-#     if i in dict:
-#         dict[i]+=1
-#     else:
-#         dict[i]=1
-# print(dict)
+    if i in dict:
+        dict[i]+=1
+    else:
+        dict[i]=0
+print(dict)
+
+def sum(num):
+    if num==0:
+        return num
+    return num+sum(num-1)
+
+target=0
+for j in dict:
+    num=dict[j]
+    if num>0:
+        # target+=sum(num)
+        target+=(num*(num+1))/2
+        target=int(target)
+print(target)
+
+
+
 
 
 
