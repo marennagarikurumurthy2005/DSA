@@ -19,20 +19,52 @@
 # Input: jewels = "z", stones = "ZZ"
 # Output: 0
 
-def func(jewels,stones):
-    count=0
-    # for i in stones:
-    #     if i in jewels:
-    #         count+=1
-    #     else:
-    #         pass
-    for i in stones:
-        for j in jewels:
-            if i==j:
-                count+=1
-                break
-            else:
-                pass
-    return count 
-result=func("aAbaBa","AabbCCC")
-print(result)
+# def func(jewels,stones):
+#     count=0
+#     # for i in stones:
+#     #     if i in jewels:
+#     #         count+=1
+#     #     else:
+#     #         pass
+#     for i in stones:
+#         for j in jewels:
+#             if i==j:
+#                 count+=1
+#                 break
+#             else:
+#                 pass
+#     return count 
+
+# result=func("aAbaBa","AabbCCC")
+# print(result)
+
+
+
+
+jewels = "aA"
+stones = "aAAbbb"
+dict={}
+count=0
+for i in stones:
+    
+    if i in jewels:
+        
+        if i in dict:
+            
+            
+            dict[i]+=1
+            
+        else:
+            
+            dict[i]=1
+        count+=1
+
+
+
+
+# for i in dict:
+#     count+=dict[i]
+
+print(count)
+
+
