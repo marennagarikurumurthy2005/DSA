@@ -43,20 +43,19 @@
 
 jewels = "aA"
 stones = "aAAbbb"
-dict={}
+# dict={}
 count=0
 for i in stones:
-    
     if i in jewels:
         
-        if i in dict:
+        # if i in dict:
             
+        
+        #     dict[i]+=1
             
-            dict[i]+=1
+        # else:
             
-        else:
-            
-            dict[i]=1
+        #     dict[i]=1
         count+=1
 
 
@@ -65,6 +64,21 @@ for i in stones:
 # for i in dict:
 #     count+=dict[i]
 
+print(count)
+
+
+
+
+count=0
+dict ={}
+for i in jewels:
+    if i in dict:
+        dict[i]+=1
+    else:
+        dict[i]=1
+for j in stones:
+    if j in dict:
+        count+=1
 print(count)
 
 
