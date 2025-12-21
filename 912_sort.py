@@ -26,22 +26,36 @@
 # 1 <= nums.length <= 5 * 104
 # -5 * 104 <= nums[i] <= 5 * 104
 
-# Bubble sort 
+ 
 # brute force approach
 
 nums = [5,1,1,2,0,0]
+n=len(nums)
 
-for i in range(len(nums)):
+# for i in range(len(nums)):
     
-    for j in range(len(nums)):
+#     for j in range(len(nums)):
         
-        if nums[i]<nums[j]:
-            temp=nums[i]
-            nums[i]=nums[j]
-            nums[j]=temp
+#         if nums[i]<nums[j]:
+#             nums[j],nums[i]=nums[i],nums[j]
+#             # temp=nums[i]
+#             # nums[i]=nums[j]
+#             # nums[j]=temp
             
-print(nums)
+# print(nums)
 
+# Bubble sort
+# compare only neighbour elements
+for i in range(n):
+    for j in range(n-i-1):
+        if nums[j]>nums[j+1]:
+            temp=nums[j]
+            nums[j]=nums[j+1]
+            nums[j+1]=temp
+            
+
+
+print(nums)
 
             
           
