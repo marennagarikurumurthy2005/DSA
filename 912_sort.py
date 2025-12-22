@@ -29,8 +29,8 @@
  
 # brute force approach
 
-nums = [5,1,1,2,0,0]
-n=len(nums)
+# nums = [5,1,1,2,0,0]
+# n=len(nums)
 
 # for i in range(len(nums)):
     
@@ -46,16 +46,35 @@ n=len(nums)
 
 # Bubble sort
 # compare only neighbour elements
-for i in range(n):
-    for j in range(n-i-1):
-        if nums[j]>nums[j+1]:
-            temp=nums[j]
-            nums[j]=nums[j+1]
-            nums[j+1]=temp
+# for i in range(n):
+#     is_sorted=True
+#     for j in range(n-i-1):
+#         if nums[j]>nums[j+1]:
+#             temp=nums[j]
+#             nums[j]=nums[j+1]
+#             nums[j+1]=temp
+#             is_sorted=False
+#     if is_sorted==True:
+#         break
             
 
 
+# print(nums)
+
+
+# using insertion sort
+nums = [5,1,1,2,0,0]
+n=len(nums)
+for i in range(1,n):
+    key=nums[i]
+    j=i-1
+    while j>=0 and nums[j]>key:
+        nums[j+1]=nums[j]
+        j-=1
+    nums[j+1]=key
+
 print(nums)
+        
 
             
           
