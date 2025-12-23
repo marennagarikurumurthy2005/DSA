@@ -63,22 +63,50 @@
 
 
 # using insertion sort
-nums = [5,1,1,2,0,0]
-n=len(nums)
-for i in range(1,n):
-    key=nums[i]
-    j=i-1
-    while j>=0 and nums[j]>key:
-        nums[j+1]=nums[j]
-        j-=1
-    nums[j+1]=key
+# nums = [5,1,1,2,0,0]
+# n=len(nums)
+# for i in range(1,n):
+#     key=nums[i]
+#     j=i-1
+#     while j>=0 and nums[j]>key:
+#         nums[j+1]=nums[j]
+#         j-=1
+#     nums[j+1]=key
 
-print(nums)
+# print(nums)
         
 
             
-          
-      
+# for i in range(1,n):
+#     key=nums[i]
+#     j=i-1
+#     while j>=0 and nums[j]>key:
+#         nums[j+1]=nums[j]
+#         j-=1
+#     nums[j+1]=key
+# print(nums)
+    
+
+#  using Selection sort 
+
+nums = [5,1,1,2,0,0]
+n=len(nums)
+for i in range(n):
+    mn=nums[i]
+    idx=i
+    for j in range(i+1,n):
+        if nums[j]<mn:
+            mn=nums[j]
+            idx=j
+    nums[i],nums[idx]=nums[idx],nums[i]
+print(nums)
+    
+
+
+
+        
+
+
             
 
 
