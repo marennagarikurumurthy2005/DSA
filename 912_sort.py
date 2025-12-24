@@ -89,17 +89,53 @@
 
 #  using Selection sort 
 
-nums = [5,1,1,2,0,0]
+# nums = [5,1,4,9,8,3,0,2]
+# n=len(nums)
+# for i in range(n):
+#     mn=nums[i]
+#     idx=i
+#     for j in range(i+1,n):
+#         if nums[j]<mn:
+#             mn=nums[j]
+#             idx=j
+#     nums[i],nums[idx]=nums[idx],nums[i]
+# print(nums)
+
+
+# Merge Sort 
+
+nums = [5,1,4,9,8,3,0,2]
 n=len(nums)
-for i in range(n):
-    mn=nums[i]
-    idx=i
-    for j in range(i+1,n):
-        if nums[j]<mn:
-            mn=nums[j]
-            idx=j
-    nums[i],nums[idx]=nums[idx],nums[i]
-print(nums)
+
+def merge_sort(nums,l,r):
+    if l<r:
+        mid=(l+r)//2
+        merge_sort()
+
+
+
+
+
+
+
+
+# def merge(left,right):
+#     result=[]
+#     i=j=0
+    
+
+
+# def merge_sort(nums):
+#     if len(nums)<=1:
+#         return nums
+#     mid=n//2
+#     left=merge_sort(nums[:mid])
+#     right=merge_sort(nums[mid:])
+#     return merge(left,right)
+
+
+
+
     
 
 
